@@ -37,7 +37,7 @@ for (let i = 0; i < lista_tecla.length; i++) {
 
       });
       lista_tecla[i].addEventListener('touchend', function () {
-        paraSom_touch();
+        //paraSom_touch();
         touchStarted = true;
 
       });
