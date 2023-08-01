@@ -25,7 +25,7 @@ function tocaSom_touch(param_audio) {
 function paraSom_touch() {
 if (audioEmExecucao != null) {
   let volume = audioEmExecucao.volume;
-  const fadeOutInterval = 5; // Intervalo de tempo para diminuir o volume em cada etapa (em milissegundos)
+  const fadeOutInterval = 15; // Intervalo de tempo para diminuir o volume em cada etapa (em milissegundos)
   const fadeOutSteps = 5; // Número de etapas para diminuir o volume
 
   // Função para diminuir o volume em cada etapa
