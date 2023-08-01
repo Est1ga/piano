@@ -24,8 +24,9 @@ function tocaSom_touch(param_audio) {
 }
 function paraSom_touch() {
     if (audioEmExecucao != null ) {
+        setTimeout(function(){
         audioEmExecucao.pause(); 
-    }
+        },2000)
 
 
 }
