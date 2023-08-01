@@ -42,7 +42,7 @@ for (let i = 0; i < lista_tecla.length; i++) {
       lista_tecla[i].addEventListener('touchend', function () {
         setTimeout(function(){
         paraSom_touch(); 
-        },1000)
+        },500)
         touchStarted = true;
 
       });
