@@ -38,7 +38,7 @@ for (let i = 0; i < lista_tecla.length; i++) {
       lista_tecla[i].addEventListener('touchend', function () {
         setTimeout(function(){
         paraSom_touch(`.som_${param_class}`); 
-        },450)
+        },400)
  
 
       });
