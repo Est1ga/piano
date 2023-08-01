@@ -3,9 +3,7 @@ var audioEmExecucao = null;
 
 function tocaSom(param_audio) {
     if (audioEmExecucao != null ) {
-        setTimeout(function(){
-        audioEmExecucao.pause(); 
-        },)
+        audioEmExecucao.pause();
         
     }
 
