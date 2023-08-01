@@ -42,11 +42,6 @@ for (let i = 0; i < lista_tecla.length; i++) {
 
       });
 
-      if (touchStarted == false) {
-        lista_tecla[i].addEventListener('click', function() {
-            let param_class = this.classList[3]; 
-            tocaSom(`.som_${param_class}`);
-        });
     }
 
 
