@@ -118,6 +118,9 @@
   top: 0px;
 
 }
+.set{
+  display: none;
+}
 } 
 @media screen and (max-width: 900px) and (orientation: landscape) {
     ul {
