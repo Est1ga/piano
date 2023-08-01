@@ -22,12 +22,7 @@ function tocaSom_touch(param_audio) {
     audio.play();
 }
 function paraSom_touch(param_audio) {
-    let veri = document.querySelector(param_audio)
-    if (veri.currentTime < veri.duration ){
-        veri.pause()
-    };
-
-
+    document.querySelector(param_audio).pause()
 }
 for (let i = 0; i < lista_tecla.length; i++) {
 
@@ -39,11 +34,11 @@ for (let i = 0; i < lista_tecla.length; i++) {
   
 
       });
-      
+
       lista_tecla[i].addEventListener('touchend', function () {
         setTimeout(function(){
         paraSom_touch(`.som_${param_class}`); 
-        },1000)
+        },600)
  
 
       });
