@@ -42,7 +42,6 @@ for (let i = 0; i < lista_tecla.length; i++) {
 
       });
 
-    }
 
 
     
