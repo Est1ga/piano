@@ -3,7 +3,10 @@ var audioEmExecucao = null;
 
 function tocaSom(param_audio) {
     if (audioEmExecucao != null ) {
+        setTimeout(function(){
         audioEmExecucao.pause(); 
+        },2000)
+        
     }
 
     const audio = document.querySelector(param_audio);
