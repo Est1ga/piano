@@ -1,21 +1,6 @@
 var lista_tecla = document.querySelectorAll('.tecla');
 var audioEmExecucao = null;
 
-function tocaSom(param_audio) {
-    if (audioEmExecucao != null ) {
-        setTimeout(function(){
-        audioEmExecucao.pause(); 
-        },2000)
-        
-    }
-
-    const audio = document.querySelector(param_audio);
-    
-    audio.currentTime = 0; 
-    audio.play();
-    audioEmExecucao = audio; 
-}
-
 function tocaSom_touch(param_audio) {
 
     const audio = document.querySelector(param_audio);
