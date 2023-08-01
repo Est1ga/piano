@@ -19,7 +19,9 @@ function tocaSom(param_audio) {
 function tocaSom_touch(param_audio) {
 
     const audio = document.querySelector(param_audio);
-    audio.currentTime = 0.1; 
+    if(audio.currentTime < audio.duration){
+    audio.currentTime = 0; 
+    }
     audio.play();
 }
 function paraSom_touch(param_audio) {
