@@ -23,24 +23,9 @@ function tocaSom_touch(param_audio) {
     audioEmExecucao = audio; 
 }
 function paraSom_touch() {
-if (audioEmExecucao != null) {
-  let volume = audioEmExecucao.volume;
-  const fadeOutInterval = 1000; // Intervalo de tempo para diminuir o volume em cada etapa (em milissegundos)
-  const fadeOutSteps = 10; // Número de etapas para diminuir o volume
-
-  // Função para diminuir o volume em cada etapa
-  function fadeOutVolume() {
-    if (volume > 0) {
-      volume -= 1 / fadeOutSteps; // Diminui o volume em 1/fadeOutSteps em cada etapa
-      audioEmExecucao.volume = volume;
-      setTimeout(fadeOutVolume, fadeOutInterval); // Chama a função novamente após o intervalo
-    } else {
-      audioEmExecucao.pause(); // Quando o volume chegar a 0, pausa o áudio
-    }
-  }
-
-  fadeOutVolume(); // Inicia o processo de diminuir o volume progressivamente
-}
+    if (audioEmExecucao != null ) {
+        audioEmExecucao.pause(); 
+        }
 
 
 }
@@ -55,7 +40,9 @@ for (let i = 0; i < lista_tecla.length; i++) {
 
       });
       lista_tecla[i].addEventListener('touchend', function () {
-        paraSom_touch();
+        setTimeout(function(){
+        paraSom_touch(); 
+        },1000)
         touchStarted = true;
 
       });
