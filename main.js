@@ -16,16 +16,14 @@ for (let i = 0; i < lista_tecla.length; i++) {
 
 
 
-    lista_tecla[i].addEventListener('touchstart', function (event) {
-         event.preventDefault();
+    lista_tecla[i].addEventListener('touchstart', function () {
         let param_class = this.classList[3];
         tocaSom_touch(`.som_${param_class}`);
   
 
       });
 
-      lista_tecla[i].addEventListener('touchend', function (event) {
-        event.preventDefault();
+      lista_tecla[i].addEventListener('touchend', function () {
         setTimeout(function(){
         paraSom_touch(`.som_${param_class}`); 
         },400)
