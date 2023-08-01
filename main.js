@@ -10,7 +10,9 @@ function tocaSom(param_audio) {
     }
 
     const audio = document.querySelector(param_audio);
-    audio.currentTime = 0; 
+    if(audio.currentTime < audio.duration){
+        audio.currentTime = 0; 
+    }
     audio.play();
     audioEmExecucao = audio; 
 }
@@ -18,7 +20,9 @@ function tocaSom(param_audio) {
 function tocaSom_touch(param_audio) {
 
     const audio = document.querySelector(param_audio);
-    audio.currentTime = 0; 
+    if(audio.currentTime < audio.duration){
+        audio.currentTime = 0; 
+    }
     audio.play();
 }
 function paraSom_touch(param_audio) {
@@ -38,7 +42,7 @@ for (let i = 0; i < lista_tecla.length; i++) {
       lista_tecla[i].addEventListener('touchend', function () {
         setTimeout(function(){
         paraSom_touch(`.som_${param_class}`); 
-        },200)
+        },600)
  
 
       });
